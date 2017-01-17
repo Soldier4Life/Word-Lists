@@ -1,0 +1,1664 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class=" is-copy-enabled is-u2f-enabled">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-b94ec35a696398c8a00f27343992e597c93faadce7783164f7f8967248cc818f.css" integrity="sha256-uU7DWmljmMigDyc0OZLll8k/qtzneDFk9/iWckjMgY8=" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-aebd420532800f9cce20cd765d8312a057d4628ae7bc626c8535e671d7767037.css" integrity="sha256-rr1CBTKAD5zOIM12XYMSoFfUYornvGJshTXmcdd2cDc=" media="all" rel="stylesheet" />
+    
+    
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-9e0f35305336555b58884b07a160747fc1f6dbd79e13e18820a598a9abcb2662.css" integrity="sha256-ng81MFM2VVtYiEsHoWB0f8H229eeE+GIIKWYqavLJmI=" media="all" rel="stylesheet" />
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>SecLists/scadapass.csv at master · danielmiessler/SecLists · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars1.githubusercontent.com/u/50654?v=3&amp;s=400" name="twitter:image:src" /><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="danielmiessler/SecLists" name="twitter:title" /><meta content="SecLists is the security tester&amp;#39;s companion. It is a collection of multiple types of lists used during security assessments. List types include usernames, passwords, URLs, sensitive data grep s..." name="twitter:description" />
+      <meta content="https://avatars1.githubusercontent.com/u/50654?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="danielmiessler/SecLists" property="og:title" /><meta content="https://github.com/danielmiessler/SecLists" property="og:url" /><meta content="SecLists is the security tester&amp;#39;s companion. It is a collection of multiple types of lists used during security assessments. List types include usernames, passwords, URLs, sensitive data grep s..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+    <meta name="request-id" content="A8B39E46:C3EE:DCFA84C:585C6293" data-pjax-transient>
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="A8B39E46:C3EE:DCFA84C:585C6293" name="octolytics-dimension-request_id" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="MGU3NGVjNjVmZWZjMGYzZmMxNDA4OGYxYzk3ZTc0YjQxYTQyYjBmMDgxZDQ1YzMyZjlkYmY0NDlmNjc0MWIxMnx7InJlbW90ZV9hZGRyZXNzIjoiMTY4LjE3OS4xNTguNzAiLCJyZXF1ZXN0X2lkIjoiQThCMzlFNDY6QzNFRTpEQ0ZBODRDOjU4NUM2MjkzIiwidGltZXN0YW1wIjoxNDgyNDQ5NTU1LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta name="html-safe-nonce" content="6cc3e4d3478c606da7e9d9e8558be7227b31990a">
+
+    <meta http-equiv="x-pjax-version" content="5d128eca840468890aa67ba61d617dcf">
+    
+
+      
+  <meta name="description" content="SecLists is the security tester&#39;s companion. It is a collection of multiple types of lists used during security assessments. List types include usernames, passwords, URLs, sensitive data grep strings, fuzzing payloads, and many more.">
+  <meta name="go-import" content="github.com/danielmiessler/SecLists git https://github.com/danielmiessler/SecLists.git">
+
+  <meta content="50654" name="octolytics-dimension-user_id" /><meta content="danielmiessler" name="octolytics-dimension-user_login" /><meta content="3482588" name="octolytics-dimension-repository_id" /><meta content="danielmiessler/SecLists" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="3482588" name="octolytics-dimension-repository_network_root_id" /><meta content="danielmiessler/SecLists" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/danielmiessler/SecLists/commits/master.atom" rel="alternate" title="Recent Commits to SecLists:master" type="application/atom+xml">
+
+
+      <link rel="canonical" href="https://github.com/danielmiessler/SecLists/blob/master/Passwords/scadapass.csv" data-pjax-transient>
+  </head>
+
+
+  <body class="logged-out  env-production windows vis-public page-blob">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+          <header class="site-header js-details-container" role="banner">
+  <div class="container-responsive">
+    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+    </a>
+
+    <button class="btn-link float-right site-header-toggle js-details-target" type="button" aria-label="Toggle navigation">
+      <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+    </button>
+
+    <div class="site-header-menu">
+      <nav class="site-header-nav site-header-nav-main">
+        <a href="/personal" class="js-selected-navigation-item nav-item nav-item-personal" data-ga-click="Header, click, Nav menu - item:personal" data-selected-links="/personal /personal">
+          Personal
+</a>        <a href="/open-source" class="js-selected-navigation-item nav-item nav-item-opensource" data-ga-click="Header, click, Nav menu - item:opensource" data-selected-links="/open-source /open-source">
+          Open source
+</a>        <a href="/business" class="js-selected-navigation-item nav-item nav-item-business" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/partners /business/features /business/customers /business">
+          Business
+</a>        <a href="/explore" class="js-selected-navigation-item nav-item nav-item-explore" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship /showcases /explore">
+          Explore
+</a>      </nav>
+
+      <div class="site-header-actions">
+            <a class="btn btn-primary site-header-actions-btn" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+          <a class="btn site-header-actions-btn mr-1" href="/login?return_to=%2Fdanielmiessler%2FSecLists%2Fblob%2Fmaster%2FPasswords%2Fscadapass.csv" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+      </div>
+
+        <nav class="site-header-nav site-header-nav-secondary mr-md-3">
+          <a class="nav-item" href="/pricing">Pricing</a>
+          <a class="nav-item" href="/blog">Blog</a>
+          <a class="nav-item" href="https://help.github.com">Support</a>
+          <a class="nav-item header-search-link" href="https://github.com/search">Search GitHub</a>
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/danielmiessler/SecLists/search" class="js-site-search-form" data-scoped-search-url="/danielmiessler/SecLists/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+    </label>
+</form></div>
+
+        </nav>
+    </div>
+  </div>
+</header>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fdanielmiessler%2FSecLists"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/danielmiessler/SecLists/watchers"
+     aria-label="600 users are watching this repository">
+    600
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fdanielmiessler%2FSecLists"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/danielmiessler/SecLists/stargazers"
+      aria-label="4361 users starred this repository">
+      4,361
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fdanielmiessler%2FSecLists"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/danielmiessler/SecLists/network" class="social-count"
+       aria-label="1658 users forked this repository">
+      1,658
+    </a>
+  </li>
+</ul>
+
+    <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/danielmiessler" class="url fn" rel="author">danielmiessler</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/danielmiessler/SecLists" data-pjax="#js-repo-pjax-container">SecLists</a></strong>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/danielmiessler/SecLists" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /danielmiessler/SecLists" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/danielmiessler/SecLists/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /danielmiessler/SecLists/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">13</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/danielmiessler/SecLists/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /danielmiessler/SecLists/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">19</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+  <a href="/danielmiessler/SecLists/projects" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /danielmiessler/SecLists/projects">
+    <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+    Projects
+    <span class="counter">0</span>
+</a>
+
+
+  <a href="/danielmiessler/SecLists/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /danielmiessler/SecLists/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z"/></svg>
+    Pulse
+</a>
+  <a href="/danielmiessler/SecLists/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /danielmiessler/SecLists/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+
+<a href="/danielmiessler/SecLists/blob/a823fad248aab2912a285dcfea2aae4cdde9ca7f/Passwords/scadapass.csv" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:810ce6c87c9dfdb1b15ac0e6b098a8dc -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/danielmiessler/SecLists/blob/master/Passwords/scadapass.csv"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/danielmiessler/SecLists/tree/1.2/Passwords/scadapass.csv"
+              data-name="1.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.2">
+                1.2
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="BtnGroup float-right">
+    <a href="/danielmiessler/SecLists/find/master"
+          class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+          data-pjax
+          data-hotkey="t">
+      Find file
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+  </div>
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/danielmiessler/SecLists"><span>SecLists</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/danielmiessler/SecLists/tree/master/Passwords"><span>Passwords</span></a></span><span class="separator">/</span><strong class="final-path">scadapass.csv</strong>
+  </div>
+</div>
+
+
+  <div class="commit-tease">
+      <span class="float-right">
+        <a class="commit-tease-sha" href="/danielmiessler/SecLists/commit/43fb6c8be9008949ba12cfdbb99a95324a5e3162" data-pjax>
+          43fb6c8
+        </a>
+        <relative-time datetime="2016-01-04T09:12:33Z">Jan 4, 2016</relative-time>
+      </span>
+      <div>
+        <img alt="" class="avatar" data-canonical-src="https://0.gravatar.com/avatar/90f575886d2443fa0373a425107e6313?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=x&amp;s=140" height="20" src="https://camo.githubusercontent.com/624d3cae851881b753fd332befc6405a799e8916/68747470733a2f2f302e67726176617461722e636f6d2f6176617461722f39306635373538383664323434336661303337336134323531303765363331333f643d68747470732533412532462532466173736574732d63646e2e6769746875622e636f6d253246696d6167657325324667726176617461727325324667726176617461722d757365722d3432302e706e6726723d7826733d313430" width="20" />
+        <span class="user-mention">John Stauffacher</span>
+          <a href="/danielmiessler/SecLists/commit/43fb6c8be9008949ba12cfdbb99a95324a5e3162" class="message" data-pjax="true" title="Added ScadaPasswords">Added ScadaPasswords</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>0</strong>
+         contributors
+      </button>
+      
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+      </ul>
+    </div>
+  </div>
+
+
+<div class="file">
+  <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a href="/danielmiessler/SecLists/raw/master/Passwords/scadapass.csv" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/danielmiessler/SecLists/blame/master/Passwords/scadapass.csv" class="btn btn-sm js-update-url-with-hash BtnGroup-item">Blame</a>
+      <a href="/danielmiessler/SecLists/commits/master/Passwords/scadapass.csv" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="https://windows.github.com"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:windows">
+            <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+        </a>
+
+        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+        </button>
+        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+        </button>
+  </div>
+
+  <div class="file-info">
+      113 lines (112 sloc)
+      <span class="file-info-divider"></span>
+    19.5 KB
+  </div>
+</div>
+
+  
+
+  <div itemprop="text" class="blob-wrapper data type-csv">
+      <div class="blob-interaction-bar">
+  <svg aria-hidden="true" class="octicon octicon-search" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+  <input type="text" name="filter" class="form-control js-csv-filter-field blob-filter" autocapitalize="off"
+         placeholder="Search this file…" aria-label="Search this file…">
+</div>
+
+<div class="markdown-body">
+  <table class="js-csv-data csv-data js-file-line-container">
+    <thead>
+      <tr id="LC1" class="js-file-line">
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <th>#SCADA StrangeLove Default/Hardcoded Passwords List</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="LC2" class="js-file-line">
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td>#Find more at http://www.scada.sl</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="LC3" class="js-file-line">
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td>#release 1.0 by Oxana Andreeva (oxana.andreeva@inbox.ru)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="LC4" class="js-file-line">
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="LC5" class="js-file-line">
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td>Vendor</td>
+        <td>Device</td>
+        <td>Default password</td>
+        <td>Port</td>
+        <td>Device type</td>
+        <td>Protocol</td>
+        <td>Source</td>
+      </tr>
+      <tr id="LC6" class="js-file-line">
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td>ABB</td>
+        <td>AC 800M</td>
+        <td>service:ABB800xA</td>
+        <td></td>
+        <td>Controller </td>
+        <td></td>
+        <td>https://library.e.abb.com/public/f355a67551218ae7c1257dc0003298c5/3BDS021515-600_-_en_AC_800M_6.0_PROFINET_IO_Configuration.pdf</td>
+      </tr>
+      <tr id="LC7" class="js-file-line">
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td>ABB</td>
+        <td>SREA-01</td>
+        <td>admin:admin</td>
+        <td>80/tcp</td>
+        <td>Ethernet Adapter Module</td>
+        <td>http</td>
+        <td>https://www.inverterdrive.com/file/ABB-SREA-01-Manual</td>
+      </tr>
+      <tr id="LC8" class="js-file-line">
+        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td>B&amp;B ELECTRONICS</td>
+        <td>CR10 v2</td>
+        <td>root:root</td>
+        <td>80/tcp</td>
+        <td>Industrial router</td>
+        <td>http</td>
+        <td>http://tekniska.pl/downloadfile/1400014902-1208342584-pdf</td>
+      </tr>
+      <tr id="LC9" class="js-file-line">
+        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td>B&amp;B ELECTRONICS</td>
+        <td>Conel 4.0.1</td>
+        <td>root:root</td>
+        <td>80/tcp</td>
+        <td>Industrial router</td>
+        <td>http</td>
+        <td>http://conel.ru/shared/files/201502/9_411.pdf</td>
+      </tr>
+      <tr id="LC10" class="js-file-line">
+        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td>B&amp;B ELECTRONICS</td>
+        <td>SPECTRE Router</td>
+        <td>root:root</td>
+        <td>80/tcp</td>
+        <td>Router</td>
+        <td>http</td>
+        <td>b&amp;b electronics SPECTRE Router.pdf</td>
+      </tr>
+      <tr id="LC11" class="js-file-line">
+        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td>B&amp;B ELECTRONICS</td>
+        <td>ER75i/ER 75i DUO/ER 75i SL/ER75i v2</td>
+        <td>root:root</td>
+        <td>80/tcp</td>
+        <td>Industrial router</td>
+        <td>http</td>
+        <td>http://ec-mobile.ru/user_files/File/Conel/ER75i_Manual_RUS.pdf</td>
+      </tr>
+      <tr id="LC12" class="js-file-line">
+        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td>B&amp;B ELECTRONICS</td>
+        <td>LR77 v2 Libratum/LR77 v2</td>
+        <td>root:root</td>
+        <td>80/tcp</td>
+        <td>Industrial router</td>
+        <td>http</td>
+        <td>http://www.induowireless.com/wp-content/uploads/2014/12/lr77-v2-libratum-manual.pdf, http://data.kommago.nl/files/pdf/conel-lr77_v2-handleiding.pdf</td>
+      </tr>
+      <tr id="LC13" class="js-file-line">
+        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td>B&amp;B ELECTRONICS</td>
+        <td>UR5i v2</td>
+        <td>root:root</td>
+        <td>80/tcp</td>
+        <td>Industrial router</td>
+        <td>http</td>
+        <td>http://www.cd.lucom.de/vpn-industrie-router/dokumentation/handbuch/ur5iv2-guide.pdf</td>
+      </tr>
+      <tr id="LC14" class="js-file-line">
+        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td>B&amp;B ELECTRONICS</td>
+        <td>UCR11-v2/UCR11 v2 SL</td>
+        <td>root:root</td>
+        <td>80/tcp</td>
+        <td>Industrial router</td>
+        <td>http</td>
+        <td>http://www.induowireless.com/wp-content/uploads/2014/03/ucr11-3g-router-hspa-cdma.pdf</td>
+      </tr>
+      <tr id="LC15" class="js-file-line">
+        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td>B&amp;B ELECTRONICS</td>
+        <td>XR5i v2E/XR5i v2/XR5i/XR5i SL</td>
+        <td>root:root</td>
+        <td>80/tcp</td>
+        <td>Industrial router</td>
+        <td>http</td>
+        <td>http://www.cd.lucom.de/vpn-industrie-router/dokumentation/handbuch/xr5iv2e-guide.pdf</td>
+      </tr>
+      <tr id="LC16" class="js-file-line">
+        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td>Beck IPC</td>
+        <td> IPC@CHIP</td>
+        <td>PPPSERVER:, ppps:ppps</td>
+        <td></td>
+        <td>PLC</td>
+        <td>pap/chap</td>
+        <td>https://www.beck-ipc.com/files/api/scxxx/config.htm</td>
+      </tr>
+      <tr id="LC17" class="js-file-line">
+        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td>BinTec Elmeg</td>
+        <td>BinTec X1200 II</td>
+        <td>admin:bintec,</td>
+        <td></td>
+        <td>Router</td>
+        <td></td>
+        <td>http://www.router-defaults.com/Router/BinTec--x1200-ip-password-username</td>
+      </tr>
+      <tr id="LC18" class="js-file-line">
+        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td>BinTec Elmeg</td>
+        <td>any routers</td>
+        <td>(##unknown - means not known or any char):, ##unknown:snmp-Trap , suggested:, admin:1234, admin:password, admin:admin</td>
+        <td></td>
+        <td>Router</td>
+        <td></td>
+        <td>http://www.router-defaults.com/Router/BinTec--x1200-ip-password-username</td>
+      </tr>
+      <tr id="LC19" class="js-file-line">
+        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td>BinTec Elmeg</td>
+        <td>BinTec R230aw</td>
+        <td>admin:funwerk</td>
+        <td></td>
+        <td>Router</td>
+        <td></td>
+        <td>http://www.tomshw.it/forum/banda-larga/154194-router-bintec.html</td>
+      </tr>
+      <tr id="LC20" class="js-file-line">
+        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td>BinTec Elmeg</td>
+        <td>bintec W2002T-n,</td>
+        <td>admin:funwerk, admin:admin</td>
+        <td></td>
+        <td>WLAN Access Point for applications in rolling stocks</td>
+        <td></td>
+        <td>bintec W2002T-n.jpeg</td>
+      </tr>
+      <tr id="LC21" class="js-file-line">
+        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td>Contemporary Control Systems</td>
+        <td>BASRT-B</td>
+        <td>admin:admin</td>
+        <td>80/tcp</td>
+        <td>Router</td>
+        <td>http</td>
+        <td>http://www.ccontrols.com/pdf/TD0712000I2.pdf</td>
+      </tr>
+      <tr id="LC22" class="js-file-line">
+        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td>Datasensor</td>
+        <td>UR5i/UR5i SL</td>
+        <td>root:root</td>
+        <td>80/tcp</td>
+        <td>Router</td>
+        <td>http</td>
+        <td>http://datasensor.de/sites/datasensor.de/files/datasheets/UR5i_m_e.pdf</td>
+      </tr>
+      <tr id="LC23" class="js-file-line">
+        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td>Digi</td>
+        <td>DC-ME-01T-S</td>
+        <td>user:passwd, root:dbps</td>
+        <td></td>
+        <td>Networking Modules</td>
+        <td></td>
+        <td>http://www.digi.com/support/forum/13553/digi-connect-me-default-password</td>
+      </tr>
+      <tr id="LC24" class="js-file-line">
+        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td>Digi</td>
+        <td>Digi Connect SP, Digi Connect Wi-SP,  Digi Connect ME,  Digi Connect ME 4 MB, Digi Connect Wi-ME, Digi Connect EM,  Digi Connect Wi-EM</td>
+        <td>root:dbps</td>
+        <td>80/tcp</td>
+        <td>Network Device Server Module</td>
+        <td>http</td>
+        <td>http://ftp1.digi.com/support/documentation/90000565_P1.pdf</td>
+      </tr>
+      <tr id="LC25" class="js-file-line">
+        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td>Digi</td>
+        <td>Digi Connect ES 4/8 SB with Switch, Digi Connect ES 4/8 SB</td>
+        <td>root:dbps</td>
+        <td>80/tcp</td>
+        <td>Concentrator</td>
+        <td>http</td>
+        <td>http://ftp1.digi.com/support/documentation/90000565_P1.pdf</td>
+      </tr>
+      <tr id="LC26" class="js-file-line">
+        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td>Digi</td>
+        <td>ConnectPort TS 4x4, ConnectPort TS 4x2, ConnectPort TS W, ConnectPort TS 8, ConnectPort TS 8 MEI, ConnectPort TS 16</td>
+        <td>root:dbps</td>
+        <td>80/tcp</td>
+        <td>Terminal Server</td>
+        <td>http</td>
+        <td>http://ftp1.digi.com/support/documentation/90000565_P1.pdf</td>
+      </tr>
+      <tr id="LC27" class="js-file-line">
+        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td>Digi</td>
+        <td>Digi Connect WAN, Digi Connect WAN GPRS, Digi Connect WAN GSM-R, Digi Connect WAN VPN, Digi Connect WAN IA, Digi Connect WAN 3G, Digi Connect WAN 3G IA, Digi Connect WAN 4G</td>
+        <td>root:dbps</td>
+        <td>80/tcp</td>
+        <td>Industrial router</td>
+        <td>http</td>
+        <td>http://www.acspl.com.au/Manuals/digi_Wan.pdf</td>
+      </tr>
+      <tr id="LC28" class="js-file-line">
+        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td>Digi</td>
+        <td>Digi TransPort WR21/WR44</td>
+        <td>username:password</td>
+        <td>80/tcp</td>
+        <td>Industrial router</td>
+        <td>http</td>
+        <td>http://ftp1.digi.com/support/documentation/transport/assets/guides/IG_Digi_WR21.pdf</td>
+      </tr>
+      <tr id="LC29" class="js-file-line">
+        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td>Digi</td>
+        <td>Digi CM</td>
+        <td>root:dbps</td>
+        <td>console port (9600, 8, N, 1)</td>
+        <td>Industrial router</td>
+        <td></td>
+        <td>http://ftp1.digi.com/support/documentation/90000300_E.pdf</td>
+      </tr>
+      <tr id="LC30" class="js-file-line">
+        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td>Digi</td>
+        <td>DigiOne IAP Serial</td>
+        <td>root:dbps</td>
+        <td>80/tcp</td>
+        <td>Gateway</td>
+        <td>http</td>
+        <td>http://web-material3.yokogawa.com/IMMW100EIP.pdf</td>
+      </tr>
+      <tr id="LC31" class="js-file-line">
+        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td>Echelon</td>
+        <td>i.LON® SmartServer</td>
+        <td>for ftp and lns servers:, ilon:ilon</td>
+        <td></td>
+        <td>router</td>
+        <td>ftp, L2TP</td>
+        <td>http://www.unicom-bg.com/pdf/systemintegration/iLONproducts/i.LON_SmartServer_Freely_Programmable_Modules_User_Guide.pdf</td>
+      </tr>
+      <tr id="LC32" class="js-file-line">
+        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td>Emerson </td>
+        <td>DeltaV™ Digital Automation System</td>
+        <td>Administrator:deltav</td>
+        <td></td>
+        <td>Automation System</td>
+        <td></td>
+        <td>http://www.chem.mtu.edu/chem_eng/current/new_courses/CM4120/2009/Getting%20Started.pdf</td>
+      </tr>
+      <tr id="LC33" class="js-file-line">
+        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td>Emerson </td>
+        <td>Liebert IntelliSlot Web Card </td>
+        <td>Liebert:Liebert, User:User</td>
+        <td>23/tcp</td>
+        <td>Web Card </td>
+        <td>telnet</td>
+        <td>http://www.emersonnetworkpower.com/documentation/en-us/products/monitoring/documents/sl-52615.pdf</td>
+      </tr>
+      <tr id="LC34" class="js-file-line">
+        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td>Emerson </td>
+        <td>Smart Wireless Gateway 1420</td>
+        <td>admin:default</td>
+        <td>80/tcp</td>
+        <td>Wireless Gateway</td>
+        <td>http</td>
+        <td>http://www2.emersonprocess.com/siteadmincenter/PM%20Rosemount%20Documents/00809-0200-4420.pdf</td>
+      </tr>
+      <tr id="LC35" class="js-file-line">
+        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td>Emerson </td>
+        <td>Network Power® MPH2™ Rack PDU</td>
+        <td>admin:admin</td>
+        <td>80/tcp</td>
+        <td>Rack PDUs</td>
+        <td>http</td>
+        <td>https://community.emerson.com/networkpower/support/avocent/power/mph2/m/mediagallery/3093</td>
+      </tr>
+      <tr id="LC36" class="js-file-line">
+        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td>Emerson </td>
+        <td>UL33 UPS </td>
+        <td>123456</td>
+        <td></td>
+        <td>UPS </td>
+        <td></td>
+        <td>Emerson UL33 UPS.doc</td>
+      </tr>
+      <tr id="LC37" class="js-file-line">
+        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td>Emerson </td>
+        <td>Control Link Refrigeration System Controller </td>
+        <td>0</td>
+        <td></td>
+        <td>Controller </td>
+        <td></td>
+        <td>http://foodservice.structuralconcepts.com/media/com_sccmanager/temp-controller-info/emerson-control-link-cpc-controller.pdf</td>
+      </tr>
+      <tr id="LC38" class="js-file-line">
+        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td>Emerson </td>
+        <td>UltraSite</td>
+        <td>User 01:100, User 05:200, User 09:300, Engineer:400</td>
+        <td></td>
+        <td>Software</td>
+        <td></td>
+        <td>http://www.emersonclimate.com/Documents/Retail%20Solutions/Manuals/0261004Rev1.pdf</td>
+      </tr>
+      <tr id="LC39" class="js-file-line">
+        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td>Emerson </td>
+        <td>Avocent® ACS 6000 Advanced Console Server</td>
+        <td>admin: avocent, root:linux</td>
+        <td></td>
+        <td>Console Server</td>
+        <td>console port, with Telnet, SSH</td>
+        <td>Emerson Avocent ACS 6000.pdf</td>
+      </tr>
+      <tr id="LC40" class="js-file-line">
+        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td>Emerson </td>
+        <td>ROCLINK™ 800</td>
+        <td>LOI:1000</td>
+        <td></td>
+        <td>Software</td>
+        <td></td>
+        <td>http://www.documentation.emersonprocess.com/groups/public/documents/instruction_manuals/d301159x012.pdf</td>
+      </tr>
+      <tr id="LC41" class="js-file-line">
+        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td>Emerson </td>
+        <td>ControlWave® Micro Quick</td>
+        <td>for download project:, SYSTEM:666666</td>
+        <td></td>
+        <td>PLC</td>
+        <td></td>
+        <td>http://www.documentation.emersonprocess.com/groups/public/documents/users_guide/d301425x012.pdf</td>
+      </tr>
+      <tr id="LC42" class="js-file-line">
+        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td>Emerson </td>
+        <td>IP-KVM Avocent MergePoint Unity</td>
+        <td>Admin:blank</td>
+        <td></td>
+        <td>Switch</td>
+        <td></td>
+        <td>http://community.emerson.com/networkpower/support/avocent/kvmip/mpunity/w/wiki-mergepoint-unity/363.default-user-name-and-password-for-the-mergepoint-unity-kvm-over-ip-appliance</td>
+      </tr>
+      <tr id="LC43" class="js-file-line">
+        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td>ENTES</td>
+        <td>EMG-10, EMG-02 , EMG-12</td>
+        <td>emg12 (for EMG12), emg10 (for EMG10), emg02 (for EMG02)</td>
+        <td>80/tcp</td>
+        <td>MODBUS Gateway</td>
+        <td>http</td>
+        <td>http://www.entes.com.tr/dosyalar/EMG_Series_EN-ver_2_2.pdf</td>
+      </tr>
+      <tr id="LC44" class="js-file-line">
+        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td>eWON</td>
+        <td>all</td>
+        <td>adm:adm</td>
+        <td>80/tcp</td>
+        <td>Router</td>
+        <td>http</td>
+        <td>http://ewon.biz/sites/default/files/aug-004-0-en-ewon_getting_started.pdf</td>
+      </tr>
+      <tr id="LC45" class="js-file-line">
+        <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td>Helmholz Systeme</td>
+        <td>NETLink PRO HW 1-1a-1 and FW 1. 54 and higher</td>
+        <td>admin</td>
+        <td></td>
+        <td>Ethernet Gateway for MPI/PROFIBUS</td>
+        <td></td>
+        <td>Helmholtz Systeme.pdf</td>
+      </tr>
+      <tr id="LC46" class="js-file-line">
+        <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td>Hirschmann</td>
+        <td>RS20/RS30, MICE</td>
+        <td>admin:private, user:public</td>
+        <td>80/tcp</td>
+        <td>Switch</td>
+        <td>http</td>
+        <td>http://www.wwsinternational.com.au/Hirschmann/pdf/quickstart.pdf;, Hirschmann MICE.pdf</td>
+      </tr>
+      <tr id="LC47" class="js-file-line">
+        <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td>Hirschmann</td>
+        <td>RSP 20/25/30/35</td>
+        <td>user:public, admin:private</td>
+        <td>23/tcp (telnet)</td>
+        <td>Industrial router</td>
+        <td>telnet</td>
+        <td>Hirschmann RSP20_25_30_35.pdf</td>
+      </tr>
+      <tr id="LC48" class="js-file-line">
+        <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td>Hirschmann</td>
+        <td>MACH 4000 Family/MACH 1000 Family/MACH 100 Family/MACH 4002 Family/MACH104 Family Full Gigabit/MACH 1040 Family Full Gigabit</td>
+        <td>user:public, admin:private</td>
+        <td></td>
+        <td>Industrial router</td>
+        <td></td>
+        <td>Hirschmann MACH1040 Full Gigabit.pdf, Hirschmann MACH4002 Family.pdf, Hirschmann MACH1000 Family.pdf, Hirschmann MACH4000 Family.pdf, http://www.industrialcomms.co.uk/images/pdf/IG_MACH104_02_1210_en.pdf, http://www.industrialcomms.co.uk/images/pdf/IG_MACH100_03_0709_en.pdf</td>
+      </tr>
+      <tr id="LC49" class="js-file-line">
+        <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td>Hirschmann</td>
+        <td>OCTOPUS 8M..., OCTOPUS 16M..., OCTOPUS 24M…</td>
+        <td>user:public, admin:private</td>
+        <td>23/tcp</td>
+        <td>Industrial router</td>
+        <td>telnet</td>
+        <td>https://www.neteon.net/media/downloads/IG_Octopus8M16M24M_PoETrain_02_0708_en_1.pdf</td>
+      </tr>
+      <tr id="LC50" class="js-file-line">
+        <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td>IBM</td>
+        <td>2210</td>
+        <td>def:trade</td>
+        <td></td>
+        <td> Multiprotocol Router</td>
+        <td></td>
+        <td>http://www.governmentsecurity.org/_/articles/default-logins-and-passwords-for-networked-devices.html</td>
+      </tr>
+      <tr id="LC51" class="js-file-line">
+        <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td>Moxa</td>
+        <td>AWK-5232-RCC Series  </td>
+        <td>admin:root</td>
+        <td>80/tcp</td>
+        <td>Industrial 802.11n wireless AP/bridge/client</td>
+        <td>http</td>
+        <td>http://www.moxa.com/doc/man/AWK-3131-RCC_UM_1e.pdf</td>
+      </tr>
+      <tr id="LC52" class="js-file-line">
+        <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td>Moxa</td>
+        <td>Railway Remote I/O (ioLogik E12xx ,  ioLogik E15xx )</td>
+        <td>Http on Port 9020: ,  1)none:root,  2)none:none</td>
+        <td>9020/tcp</td>
+        <td>Remote Ethernet I/O</td>
+        <td>http</td>
+        <td>http://www.toolswatch.org/2013/02/new-scada-default-passwords-added-to-dpe-xml-database/</td>
+      </tr>
+      <tr id="LC53" class="js-file-line">
+        <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td>Moxa</td>
+        <td>Cellular Micro RTU Controller (ioLogik W53xx, ioLogik)</td>
+        <td>administrator:blank, Telnet on port 9900 / 9000:, root:root</td>
+        <td>9900/9000/tcp</td>
+        <td>micro RTU controller</td>
+        <td>telnet or serial console</td>
+        <td>http://www.toolswatch.org/2013/02/new-scada-default-passwords-added-to-dpe-xml-database/</td>
+      </tr>
+      <tr id="LC54" class="js-file-line">
+        <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td>Moxa</td>
+        <td>VPort 461 Industrial Video Encoder </td>
+        <td>admin:admin, &lt;none&gt;:&lt;none&gt;</td>
+        <td></td>
+        <td>Industrial Video Encoder </td>
+        <td>telnet</td>
+        <td>http://www.moxa.com/doc/man/VPort_461_UM_2e.pdf</td>
+      </tr>
+      <tr id="LC55" class="js-file-line">
+        <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td>Moxa</td>
+        <td> IA240/241 Embedded computer</td>
+        <td>telnet root:root, ftp  root:blank, ppp root:blank, serial console root:root</td>
+        <td></td>
+        <td>Embedded computers are designed for industrial, automation applications</td>
+        <td>telnet, ftp, ppp, serial console</td>
+        <td>http://www.toolswatch.org/2013/02/new-scada-default-passwords-added-to-dpe-xml-database/</td>
+      </tr>
+      <tr id="LC56" class="js-file-line">
+        <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td>moxa</td>
+        <td>OnCell Central Manager</td>
+        <td>admin:admin</td>
+        <td>8080/tcp</td>
+        <td>Software</td>
+        <td>http</td>
+        <td>http://www.moxa.ru/files/manuals_modems/oncell_central_manager_users_manual_v1.pdf</td>
+      </tr>
+      <tr id="LC57" class="js-file-line">
+        <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td>moxa</td>
+        <td>EDS-508A/505A Series</td>
+        <td>admin:&lt;none&gt;</td>
+        <td></td>
+        <td>Switch</td>
+        <td>telnet or serial console</td>
+        <td>http://www.moxa.com/doc/man/eds-508a_505a_um_4e.pdf</td>
+      </tr>
+      <tr id="LC58" class="js-file-line">
+        <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td>Moxa</td>
+        <td>OnCell G3100</td>
+        <td>Admin:Keep &lt;blank&gt;</td>
+        <td>23/tcp</td>
+        <td>cellular IP gateways</td>
+        <td>telnet</td>
+        <td>http://www.moxa.com/doc/man/OnCell_G3100_Series_Users_Manual_v7.pdf</td>
+      </tr>
+      <tr id="LC59" class="js-file-line">
+        <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
+        <td>Netcomm Wireless</td>
+        <td>3G21WB (BigPond Firmware), 3G9WB (BigPond Firmware), N3G001W (Netcomm Firmware), NB14WN (Netcomm Firmware), NB5 (Netcomm Firmware), NB5Plus4 (Netcomm Firmware), NB6Plus4 (Netcomm Firmware), NB6Plus4W (Netcomm Firmware), NNB7 (Netcomm Firmware), NB9WMAXX (Netcomm Firmware), NP804N (Netcomm Firmware)</td>
+        <td>admin:admin</td>
+        <td></td>
+        <td>Router</td>
+        <td></td>
+        <td>http://www.pcwintech.com/default-router-modem-passwords2</td>
+      </tr>
+      <tr id="LC60" class="js-file-line">
+        <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
+        <td>Netcomm Wireless</td>
+        <td>NB1300 Plus 4 (Netcomm Firmware), NP803N (Netcomm Firmware)</td>
+        <td>admin:password</td>
+        <td></td>
+        <td>Router</td>
+        <td></td>
+        <td>http://www.pcwintech.com/default-router-modem-passwords2</td>
+      </tr>
+      <tr id="LC61" class="js-file-line">
+        <td id="L61" class="blob-num js-line-number" data-line-number="61"></td>
+        <td>NOVUS AUTOMATION</td>
+        <td>Superview</td>
+        <td>superview:superview </td>
+        <td></td>
+        <td>SCADA</td>
+        <td></td>
+        <td>http://www.scigiene.com/pdfs/Superview%20Manual.pdf</td>
+      </tr>
+      <tr id="LC62" class="js-file-line">
+        <td id="L62" class="blob-num js-line-number" data-line-number="62"></td>
+        <td>OMRON IA</td>
+        <td>CJ1M CPU Units with Ethernet Functions</td>
+        <td>for http: ETHERNET, for ftp: CONFIDENTIAL</td>
+        <td>80/tcp (http), 21/tcp (ftp)</td>
+        <td>PLC</td>
+        <td>http, ftp</td>
+        <td>http://omronkft.hu/nostree/pdfs/plc/cs1_cj1/w441-e1-03+cj-series-ethernetfunc+opermanual.pdf</td>
+      </tr>
+      <tr id="LC63" class="js-file-line">
+        <td id="L63" class="blob-num js-line-number" data-line-number="63"></td>
+        <td>Ouman </td>
+        <td>EH-net server</td>
+        <td>admin:admin</td>
+        <td></td>
+        <td>HMI Software</td>
+        <td></td>
+        <td>http://docplayer.fi/509891-Palvelin-eh-net-kayttoonotto-ja-yllapito-www-ouman-fi.html</td>
+      </tr>
+      <tr id="LC64" class="js-file-line">
+        <td id="L64" class="blob-num js-line-number" data-line-number="64"></td>
+        <td>Phoenix Contact</td>
+        <td>Logic+</td>
+        <td>admin:admin</td>
+        <td>80/tcp</td>
+        <td>Software</td>
+        <td>http</td>
+        <td>https://www.phoenixcontact.com/assets/downloads_ed/global/web_dwl_technical_info/52005213_EN.pdf</td>
+      </tr>
+      <tr id="LC65" class="js-file-line">
+        <td id="L65" class="blob-num js-line-number" data-line-number="65"></td>
+        <td>Prosoft Technology</td>
+        <td>ICX30-HWC</td>
+        <td>admin:password</td>
+        <td>80/tcp</td>
+        <td> Industrial Cellular Gateway</td>
+        <td>http</td>
+        <td>http://www.prosoft-technology.com/content/download/8772/168219/version/9/file/ICX30_HWC_User_Manual.pdf</td>
+      </tr>
+      <tr id="LC66" class="js-file-line">
+        <td id="L66" class="blob-num js-line-number" data-line-number="66"></td>
+        <td>Rockwell Automation /Allen-Bradley</td>
+        <td>1756-EN2TSC</td>
+        <td>Administrator:admin</td>
+        <td>80/tcp</td>
+        <td>EtherNet/IP communication module</td>
+        <td>http</td>
+        <td>http://literature.rockwellautomation.com/idc/groups/literature/documents/um/enet-um003_-en-p.pdf</td>
+      </tr>
+      <tr id="LC67" class="js-file-line">
+        <td id="L67" class="blob-num js-line-number" data-line-number="67"></td>
+        <td>Rockwell Automation /Allen-Bradley</td>
+        <td>1734-AENT</td>
+        <td>admin:password</td>
+        <td>80/tcp</td>
+        <td> I/O Adapter </td>
+        <td>http</td>
+        <td>http://literature.rockwellautomation.com/idc/groups/literature/documents/um/1734-um011_-en-p.pdf</td>
+      </tr>
+      <tr id="LC68" class="js-file-line">
+        <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
+        <td>Rockwell Automation /Allen-Bradley</td>
+        <td>1756-EWEB</td>
+        <td>Administrator:&lt;none&gt;</td>
+        <td>80/tcp</td>
+        <td>Web Server Module</td>
+        <td>http</td>
+        <td>https://www.jlab.org/Hall-D/Documents/manuals/Allen-Bradley%20stuff/1756-EWEB%20Web%20Server%20Module.pdf</td>
+      </tr>
+      <tr id="LC69" class="js-file-line">
+        <td id="L69" class="blob-num js-line-number" data-line-number="69"></td>
+        <td>Rockwell Automation /Allen-Bradley</td>
+        <td>MicroLogix 1400 Embedded Web Server</td>
+        <td>administrator:ml1400, guest:guest</td>
+        <td>80/tcp</td>
+        <td>Web Server</td>
+        <td>http</td>
+        <td>http://literature.rockwellautomation.com/idc/groups/literature/documents/um/1766-um002_-en-p.pdf</td>
+      </tr>
+      <tr id="LC70" class="js-file-line">
+        <td id="L70" class="blob-num js-line-number" data-line-number="70"></td>
+        <td>Rockwell Automation /Allen-Bradley</td>
+        <td>MicroLogix 1100 Embedded Web Server</td>
+        <td>administrator:ml1100, guest:guest</td>
+        <td>80/tcp</td>
+        <td>Web Server</td>
+        <td>http</td>
+        <td>http://literature.rockwellautomation.com/idc/groups/literature/documents/um/1763-um002_-en-p.pdf</td>
+      </tr>
+      <tr id="LC71" class="js-file-line">
+        <td id="L71" class="blob-num js-line-number" data-line-number="71"></td>
+        <td>Rockwell Automation /Allen-Bradley</td>
+        <td>PanelView Plus 6 Graphic Terminals, Firmware 6.10 or later/ , PVPlus 6</td>
+        <td>password</td>
+        <td></td>
+        <td>SCADA</td>
+        <td></td>
+        <td>http://www.manualsdir.com/manuals/580848/rockwell-automation-2711p-xxxx-panelview-plus-6-terminals-user-manual.html?page=54</td>
+      </tr>
+      <tr id="LC72" class="js-file-line">
+        <td id="L72" class="blob-num js-line-number" data-line-number="72"></td>
+        <td>Samsung</td>
+        <td>Integrated Management System DMS</td>
+        <td>root:rkwjsdusrnth</td>
+        <td></td>
+        <td>Data Management Server</td>
+        <td></td>
+        <td>http://www.tenable.com/plugins/index.php?view=single&amp;id=53878</td>
+      </tr>
+      <tr id="LC73" class="js-file-line">
+        <td id="L73" class="blob-num js-line-number" data-line-number="73"></td>
+        <td>Samsung</td>
+        <td>Integrated Management System S-NET mini</td>
+        <td>0</td>
+        <td></td>
+        <td>Built-in web server</td>
+        <td></td>
+        <td>http://dvmdownload.com/controls/central-control-options/mst-s3w/technical-tip/SNET%20MINI%20MST-S3W%20SETUP_1%2017%202012.pdf</td>
+      </tr>
+      <tr id="LC74" class="js-file-line">
+        <td id="L74" class="blob-num js-line-number" data-line-number="74"></td>
+        <td>Schneider Electric</td>
+        <td>PowerLogic™ Series 800 Power Meter</td>
+        <td>0</td>
+        <td></td>
+        <td>PLC</td>
+        <td></td>
+        <td>http://www.powerlogic.com/literature/63230-500-282A1_PM8_Install_Guide.pdf</td>
+      </tr>
+      <tr id="LC75" class="js-file-line">
+        <td id="L75" class="blob-num js-line-number" data-line-number="75"></td>
+        <td>Schneider Electric</td>
+        <td>PowerLogic™ ION8*/7*/6* Energy and power meter</td>
+        <td>0</td>
+        <td></td>
+        <td>Energy and power meter</td>
+        <td></td>
+        <td>http://www2.schneider-electric.com/library/SCHNEIDER_ELECTRIC/SE_LOCAL/APS/209510_35F6/8650_Install_Guide.pdf, http://azzo.com.au/wp-content/uploads/2015/08/ION7550-RTU-UserGuide.pdf</td>
+      </tr>
+      <tr id="LC76" class="js-file-line">
+        <td id="L76" class="blob-num js-line-number" data-line-number="76"></td>
+        <td>Schneider Electric</td>
+        <td>PowerLogicTM Ethernet Gateway EGX300/EGX100</td>
+        <td>Administrator:Gateway</td>
+        <td>80/tcp</td>
+        <td>Integrated gateway-server</td>
+        <td>http</td>
+        <td>http://azzo.com.au/wp-content/uploads/2015/05/PowerLogic-EGX300-Users-Guide.pdf</td>
+      </tr>
+      <tr id="LC77" class="js-file-line">
+        <td id="L77" class="blob-num js-line-number" data-line-number="77"></td>
+        <td>Schneider Electric</td>
+        <td>POWERLOGIC® EGX200 or EGX400 with firmware version 5.5 or higher</td>
+        <td>Administrator:admin, User 1:master, User 2:engineer, User 3:operator</td>
+        <td>80/tcp</td>
+        <td>gateway-server</td>
+        <td>http</td>
+        <td>http://www.powerlogic.com/literature/63230-314-208A3.pdf</td>
+      </tr>
+      <tr id="LC78" class="js-file-line">
+        <td id="L78" class="blob-num js-line-number" data-line-number="78"></td>
+        <td>Schneider Electric</td>
+        <td>Modicon Quantum</td>
+        <td>ftpuser/password, qbf77101/hexakisoctahedron, USER:USERUSER</td>
+        <td>80/tcp</td>
+        <td>PLC</td>
+        <td>http</td>
+        <td>http://www.digitalbond.com/tools/basecamp/schneider-modicon-quantum/, http://www.schneider-electric.cn/downloads//85257689000007EE/All/01507367599A9DC985257871005F4B3D/$File/EIO0000000121EN.pdf</td>
+      </tr>
+      <tr id="LC79" class="js-file-line">
+        <td id="L79" class="blob-num js-line-number" data-line-number="79"></td>
+        <td>Schneider Electric</td>
+        <td>Modicon M340 for Ethernet</td>
+        <td>ntpupdate:ntpupdate (Using an FTP client, store your rules in the file:, /FLASH0/wwwroot/conf/NTP/customrules), USER:USER (FTP Setup page via HTTP, HTTP credentials)</td>
+        <td></td>
+        <td>PLC</td>
+        <td>ftp, http</td>
+        <td>https://dariusfreamon.wordpress.com/2013/12/08/schneider-modicon-m340-for-ethernet-multiple-default-credentials/</td>
+      </tr>
+      <tr id="LC80" class="js-file-line">
+        <td id="L80" class="blob-num js-line-number" data-line-number="80"></td>
+        <td>Schneider Electric</td>
+        <td>PM8000, PM8240, PM8243, PM8244</td>
+        <td>8000:00:00</td>
+        <td>80/tcp</td>
+        <td>PLC</td>
+        <td>http</td>
+        <td>http://www2.schneider-electric.com/sites/corporate/en/support/faq/faq_main.page?page=content&amp;country=APS_GLOBAL&amp;lang=en&amp;locale=en_US&amp;id=FA243275&amp;redirect=true</td>
+      </tr>
+      <tr id="LC81" class="js-file-line">
+        <td id="L81" class="blob-num js-line-number" data-line-number="81"></td>
+        <td>Schneider Electric</td>
+        <td>TSX ETG 1000</td>
+        <td>HTTP server, pap: USER:USER, FTP:, wsupgrade:wsupgrade</td>
+        <td>21 TCP</td>
+        <td>PLC</td>
+        <td>ftp, pap, http</td>
+        <td>http://www.is-com.ru/files/net_tsxetg1000.pdf</td>
+      </tr>
+      <tr id="LC82" class="js-file-line">
+        <td id="L82" class="blob-num js-line-number" data-line-number="82"></td>
+        <td>Schneider Electric</td>
+        <td>ETG100</td>
+        <td>Administrator:Gateway</td>
+        <td></td>
+        <td>PLC</td>
+        <td></td>
+        <td>http://www.schneider-electric.co.in/sites/india/en/support/faq/main_faq.page?page=content&amp;country=IN&amp;lang=en&amp;id=FA138738&amp;locale=en_US&amp;redirect=true</td>
+      </tr>
+      <tr id="LC83" class="js-file-line">
+        <td id="L83" class="blob-num js-line-number" data-line-number="83"></td>
+        <td>Schneider Electric</td>
+        <td>M258</td>
+        <td>adm:adm</td>
+        <td>80/tcp</td>
+        <td>PLC</td>
+        <td>http</td>
+        <td>http://ewon.biz/sites/default/files/aug-054-0-en-remote_access_for_schneider_m258_plcs.pdf</td>
+      </tr>
+      <tr id="LC84" class="js-file-line">
+        <td id="L84" class="blob-num js-line-number" data-line-number="84"></td>
+        <td>Schneider Electric</td>
+        <td>Quantum NOE 771 xx</td>
+        <td>ftp, http: , USER:USER</td>
+        <td></td>
+        <td>Ethernet Modules</td>
+        <td>ftp, http</td>
+        <td>https://igate.alamedaelectric.com/Modicon%20Documents/PLC%20Quantum%20PLC%20NOE771xx%20User%20Manual%20v5.0.pdf</td>
+      </tr>
+      <tr id="LC85" class="js-file-line">
+        <td id="L85" class="blob-num js-line-number" data-line-number="85"></td>
+        <td>siemens </td>
+        <td>Simatic S7-300 (pre-2009 versions)</td>
+        <td>Hardcoded password:, Basisk:Basisk</td>
+        <td></td>
+        <td>PLC</td>
+        <td>telnet. Http</td>
+        <td>http://www.wired.com/2011/08/siemens-hardcoded-password/</td>
+      </tr>
+      <tr id="LC86" class="js-file-line">
+        <td id="L86" class="blob-num js-line-number" data-line-number="86"></td>
+        <td>siemens </td>
+        <td>Scalance</td>
+        <td>admin:admin, user:user</td>
+        <td></td>
+        <td>Industrial Ethernet switche</td>
+        <td></td>
+        <td>https://www.acunetix.com/vulnerabilities/network/vulnerability/siemens-scalance-default-credentials/</td>
+      </tr>
+      <tr id="LC87" class="js-file-line">
+        <td id="L87" class="blob-num js-line-number" data-line-number="87"></td>
+        <td>siemens </td>
+        <td>Scalance (x 200, W788-1PRO,   W788-2PRO, etc.)</td>
+        <td>Admin:admin, User:user, for FTP access:, siemens:siemens</td>
+        <td>80/tcp</td>
+        <td>Industrial Wireless LAN, Industrial Ethernet Switches</td>
+        <td>ftp, http</td>
+        <td>https://cache.industry.siemens.com/dl/files/728/25508728/att_4008/v1/BA_SCALANCE-X-200_76.pdf, https://www.acunetix.com/vulnerabilities/network/vulnerability/siemens-scalance-default-credentials/</td>
+      </tr>
+      <tr id="LC88" class="js-file-line">
+        <td id="L88" class="blob-num js-line-number" data-line-number="88"></td>
+        <td>siemens </td>
+        <td>SyncoTM living Web server OZW772  V2.0</td>
+        <td>Administrator:Password</td>
+        <td></td>
+        <td>Web-server</td>
+        <td></td>
+        <td>http://www.toolswatch.org/2013/02/new-scada-default-passwords-added-to-dpe-xml-database/</td>
+      </tr>
+      <tr id="LC89" class="js-file-line">
+        <td id="L89" class="blob-num js-line-number" data-line-number="89"></td>
+        <td>siemens </td>
+        <td>Siemens WinCC 7.x</td>
+        <td>winccd:winccpass, wincce:winccpass, DMUser:Data&amp;Pass, Administrator:Administrator</td>
+        <td></td>
+        <td>HMI Software</td>
+        <td></td>
+        <td>http://www.toolswatch.org/2013/02/new-scada-default-passwords-added-to-dpe-xml-database/</td>
+      </tr>
+      <tr id="LC90" class="js-file-line">
+        <td id="L90" class="blob-num js-line-number" data-line-number="90"></td>
+        <td>siemens </td>
+        <td>Ruggedcom RMC30</td>
+        <td>admin:admin</td>
+        <td>80/tcp</td>
+        <td>Industrial router</td>
+        <td>http</td>
+        <td>Siemens Ruggedcom RMC30.pdf</td>
+      </tr>
+      <tr id="LC91" class="js-file-line">
+        <td id="L91" class="blob-num js-line-number" data-line-number="91"></td>
+        <td>siemens </td>
+        <td>RuggedSwitch, RS8000 / RS1600 / RS900</td>
+        <td>admin</td>
+        <td></td>
+        <td>Industrial router</td>
+        <td></td>
+        <td>http://www.techsalesnw.com/oldwebsite/products/ethernet/rc_files/RuggedSwitch%20User%20Guide%20v1.5.1.pdf</td>
+      </tr>
+      <tr id="LC92" class="js-file-line">
+        <td id="L92" class="blob-num js-line-number" data-line-number="92"></td>
+        <td>Siemens </td>
+        <td>Siemens Climatix</td>
+        <td>Level 6 End users:, 1000, Level 4 Service operator: , 2000, Level 2 OEM:, 6000</td>
+        <td></td>
+        <td>PLC</td>
+        <td></td>
+        <td>http://www.ivprodukt.se/documents/ivprodukt/documents/styr%20climatix/basis%20document%20climatix%20control%20system%20bdcx.100820.01.gb.pdf</td>
+      </tr>
+      <tr id="LC93" class="js-file-line">
+        <td id="L93" class="blob-num js-line-number" data-line-number="93"></td>
+        <td>Sierra Wireless</td>
+        <td>AirLink</td>
+        <td>sconsole:12345</td>
+        <td>12345/tcp, 2332/tcp</td>
+        <td>3G/4G gateway</td>
+        <td>telnet, ssh</td>
+        <td>official documentation</td>
+      </tr>
+      <tr id="LC94" class="js-file-line">
+        <td id="L94" class="blob-num js-line-number" data-line-number="94"></td>
+        <td>Sierra Wireless</td>
+        <td>AirLink</td>
+        <td>user:12345, viewer:12345</td>
+        <td>9191/tcp</td>
+        <td>3G/4G gateway</td>
+        <td>http</td>
+        <td>official documentation</td>
+      </tr>
+      <tr id="LC95" class="js-file-line">
+        <td id="L95" class="blob-num js-line-number" data-line-number="95"></td>
+        <td>Stulz GmbH</td>
+        <td>Stulz WIB 8000</td>
+        <td>Administrator, highest authorization:, ganymed, Medium authorization:, kallisto, Lowest authorization:, europa</td>
+        <td></td>
+        <td>PLC</td>
+        <td></td>
+        <td>https://dariusfreamon.wordpress.com/2013/09/07/stulz-wib-8000-air-conditioning-web-interface-board-multiple-vulnerabilities/</td>
+      </tr>
+      <tr id="LC96" class="js-file-line">
+        <td id="L96" class="blob-num js-line-number" data-line-number="96"></td>
+        <td>TAC AB</td>
+        <td>TAC Xenta 500/700/911/913, TAC Xenta511, TAC Xenta527,</td>
+        <td>root:root</td>
+        <td></td>
+        <td>PLC</td>
+        <td></td>
+        <td>http://www.xref.be/dpdf/tac_xenta911_xenta511_manuel_uk.pdf</td>
+      </tr>
+      <tr id="LC97" class="js-file-line">
+        <td id="L97" class="blob-num js-line-number" data-line-number="97"></td>
+        <td>Tecomat </td>
+        <td>Tecomat Foxtrot </td>
+        <td>0:0 (role 0) , 1:1 (role 1), 2:2 (role 2), 3:3 (role 3), 4:4 (role 4), 5:5 (role 5), 6:6 (role 6), 7:7 (role 7), 8:8 (role 8), 9:9 (role 9) </td>
+        <td></td>
+        <td>PLC</td>
+        <td></td>
+        <td>http://dsec.ru/ipm-research-center/notification-of-vulnerabilities/tecomat_plc_paroli_po_umolchaniyu/</td>
+      </tr>
+      <tr id="LC98" class="js-file-line">
+        <td id="L98" class="blob-num js-line-number" data-line-number="98"></td>
+        <td>Tridium</td>
+        <td>NiagaraAX</td>
+        <td>tridium:niagara</td>
+        <td></td>
+        <td>Software for JACE-2, JACE-403 or JACE-545</td>
+        <td></td>
+        <td>http://www.hvacc.net/pdf/tridium/docs_3.2.16/docJaceStartup/docJaceStartup.pdf</td>
+      </tr>
+      <tr id="LC99" class="js-file-line">
+        <td id="L99" class="blob-num js-line-number" data-line-number="99"></td>
+        <td>Turck</td>
+        <td>BL20-E-GW-EN</td>
+        <td>password</td>
+        <td>80/tcp</td>
+        <td>PLC</td>
+        <td>http</td>
+        <td>http://pdb.turck.de/media/_in/Anlagen/D301173.pdf</td>
+      </tr>
+      <tr id="LC100" class="js-file-line">
+        <td id="L100" class="blob-num js-line-number" data-line-number="100"></td>
+        <td>Wago</td>
+        <td>WAGO-I/O-SYSTEM 750</td>
+        <td>admin:wago, user:user, guest:guest</td>
+        <td>80/tcp</td>
+        <td>Controller </td>
+        <td>http</td>
+        <td>http://www.wago.spb.ru/upload/information_system_28/3/2/8/item_328/information_items_property_340.pdf</td>
+      </tr>
+      <tr id="LC101" class="js-file-line">
+        <td id="L101" class="blob-num js-line-number" data-line-number="101"></td>
+        <td>Wago</td>
+        <td>WAGO-I/O-IPC 758-870/000-xxx</td>
+        <td>http, ftp:, user:user00 , administrator:, su:ko2003wa</td>
+        <td>80/tcp (http)</td>
+        <td>Compact Industrial PC </td>
+        <td>http, ftp</td>
+        <td>http://www.wago.com/wagoweb/documentation/758/eng_manu/870/q07580870_00000000_2en.pdf</td>
+      </tr>
+      <tr id="LC102" class="js-file-line">
+        <td id="L102" class="blob-num js-line-number" data-line-number="102"></td>
+        <td>Wago</td>
+        <td>Modular I/O-System Linux Fieldbus Coupler 750-860 </td>
+        <td>root:wago , admin:wago, user:user , guest:guest </td>
+        <td></td>
+        <td>PLC</td>
+        <td></td>
+        <td>http://www.wago.com/wagoweb/documentation/750/eng_manu/coupler_controller/m07500860_00000000_0en.pdf</td>
+      </tr>
+      <tr id="LC103" class="js-file-line">
+        <td id="L103" class="blob-num js-line-number" data-line-number="103"></td>
+        <td>Wellintech</td>
+        <td>KingSCADA 3.0</td>
+        <td>administrator:administrator (role KVAdministrator)</td>
+        <td></td>
+        <td>Software</td>
+        <td></td>
+        <td>http://www.slideshare.net/DefconRussia/pavel-volobuev-alexander-minozhenko-alexander-polyakov-practical-demonstration-of-typical-attacks-and-0days-in-scada-and-plccontrollers</td>
+      </tr>
+      <tr id="LC104" class="js-file-line">
+        <td id="L104" class="blob-num js-line-number" data-line-number="104"></td>
+        <td>Westermo</td>
+        <td>TDW 33</td>
+        <td>no password, just return, Hardcoded password:, n3Y9kA6otYZu8 , (?? TD-36)</td>
+        <td></td>
+        <td>Industrial Modem</td>
+        <td></td>
+        <td>Westermo TDW 33.pdf</td>
+      </tr>
+      <tr id="LC105" class="js-file-line">
+        <td id="L105" class="blob-num js-line-number" data-line-number="105"></td>
+        <td>Westermo</td>
+        <td>MRD-305-DIN/MRD-310/MRD-315/MRD-330/MRD-355/MRD-350/MRD-455</td>
+        <td>admin:westermo</td>
+        <td>80/tcp</td>
+        <td>Industrial router</td>
+        <td>http</td>
+        <td>http://www.eternity-sales.com/westermo/files/westermo_ug_6623-2266_mrd-305-DIN_en.pdf, Westermo MRD 330.pdf</td>
+      </tr>
+      <tr id="LC106" class="js-file-line">
+        <td id="L106" class="blob-num js-line-number" data-line-number="106"></td>
+        <td>Westermo</td>
+        <td>RedFox Series, Wolverine Series, Lynx Series, Falcon Series, Viper Series</td>
+        <td>admin:westermo</td>
+        <td>80/tcp</td>
+        <td>Industrial router</td>
+        <td>http</td>
+        <td>http://www.westermosales.com/pdfs/westermo_mg_6101-3201_weos.pdf</td>
+      </tr>
+      <tr id="LC107" class="js-file-line">
+        <td id="L107" class="blob-num js-line-number" data-line-number="107"></td>
+        <td>Wonderware</td>
+        <td>Intouch</td>
+        <td>Administrator:Wonderware</td>
+        <td></td>
+        <td>SCADA</td>
+        <td></td>
+        <td>http://www.automation-talk.info/2011/01/default-intouch-login-username-password.html</td>
+      </tr>
+      <tr id="LC108" class="js-file-line">
+        <td id="L108" class="blob-num js-line-number" data-line-number="108"></td>
+        <td>Yokogawa</td>
+        <td>YFGW410 gateway</td>
+        <td>admin:!admin</td>
+        <td></td>
+        <td>Wireless Management Station</td>
+        <td></td>
+        <td>http://www.yokogawa.com/us/support/knowledgebase/i-cannot-login-to-the-yfgw410-gateway-what-is-the-default-username-and-password-of-a-yfgw410-isa100-gateway.htm</td>
+      </tr>
+      <tr id="LC109" class="js-file-line">
+        <td id="L109" class="blob-num js-line-number" data-line-number="109"></td>
+        <td>Yokogawa</td>
+        <td>DX1000/DX1000N/DX2000 Advanced</td>
+        <td>Administrator 1:Admin1, Administrator 2:Admin2, ..., Administrator 5:Admin5, User 1:User01, ..., User 90:User90</td>
+        <td></td>
+        <td>Software</td>
+        <td></td>
+        <td>http://web-material3.yokogawa.com/IM04L41B01-05EN_020.pdf</td>
+      </tr>
+      <tr id="LC110" class="js-file-line">
+        <td id="L110" class="blob-num js-line-number" data-line-number="110"></td>
+        <td>Yokogawa</td>
+        <td>CENTUM CS 3000 DCS</td>
+        <td>CENTUM:CENTUM</td>
+        <td></td>
+        <td>Distributed Control System</td>
+        <td></td>
+        <td>http://www.allinterview.com/showanswers/170266/having-yokogawa-centum-cs-3000-dcs-2-fcs-4-operation-download-message-appears-eq.html</td>
+      </tr>
+      <tr id="LC111" class="js-file-line">
+        <td id="L111" class="blob-num js-line-number" data-line-number="111"></td>
+        <td>Yokogawa</td>
+        <td>EJX910A Multivariable Transmitter HART Communication Type</td>
+        <td>YOKOGAWA. (to release the Write Protect mode),</td>
+        <td></td>
+        <td>Multivariable transmitter</td>
+        <td></td>
+        <td>http://www.controlswarehouse.com/sheets/meriam/EJX910HARTIM01C25R02-01E_001.pdf</td>
+      </tr>
+      <tr id="LC112" class="js-file-line">
+        <td id="L112" class="blob-num js-line-number" data-line-number="112"></td>
+        <td>Yokogawa</td>
+        <td>WT 3000 Driver </td>
+        <td>anonymous:blank (Ethernet access)</td>
+        <td></td>
+        <td>Precision Power Analyzer</td>
+        <td></td>
+        <td>Yokagawa WT3000.doc</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  </div>
+
+</div>
+
+<button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+<div id="jump-to-line" style="display:none">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+    <button type="submit" class="btn">Go</button>
+</form></div>
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links float-right">
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2016 <span title="0.05249s from github-fe129-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+      </button>
+      You can't perform that action at this time.
+    </div>
+
+
+      
+      <script crossorigin="anonymous" integrity="sha256-n9HCPfyjV3IQ6kJMOhSfwhrIu2Yqzd7DcomYbi1mnaw=" src="https://assets-cdn.github.com/assets/frameworks-9fd1c23dfca3577210ea424c3a149fc21ac8bb662acddec37289986e2d669dac.js"></script>
+      <script async="async" crossorigin="anonymous" integrity="sha256-i28Sf4dlo1o0664ifALHi3SQSHK/WAdbTtwTTU6ywhg=" src="https://assets-cdn.github.com/assets/github-8b6f127f8765a35a34ebae227c02c78b74904872bf58075b4edc134d4eb2c218.js"></script>
+      
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+  </body>
+</html>
+
